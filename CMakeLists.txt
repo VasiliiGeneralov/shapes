@@ -12,9 +12,6 @@ if (CMAKE_CXX_EXTENSIONS)
 endif()
 
 set(CMAKE_PREFIX_PATH "C:/glew-2.1.0")
-set(CMAKE_LIBRARY_PATH "C:/glew-2.1.0/lib/Release/Win32")
-find_path(GLEW_INCLUDE_DIR GL/glew.h)
-find_library(GLEW_LIBRARY NAMES GLEW glew32 glew glew32s PATH_SUFFIXES lib64)
 
 find_package(GLEW REQUIRED)
 find_package(OpenGL REQUIRED COMPONENTS OpenGL)
