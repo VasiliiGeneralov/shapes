@@ -1,2 +1,6 @@
 add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL)
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL freeglut_static)
+target_include_directories(${PROJECT_NAME} PRIVATE
+                                           ${CMAKE_CURRENT_SOURCE_DIR}
+                                           ${CMAKE_BINARY_DIR}
+                                           ${PROJECT_SOURCE_DIR}/glut/FreeGLUT/freeglut/freeglut/include)

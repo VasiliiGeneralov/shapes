@@ -1,0 +1,3 @@
+[submodule "glut/FreeGLUT"]
+	path = glut/FreeGLUT
+	url = git@github.com:dcnieho/FreeGLUT.git
